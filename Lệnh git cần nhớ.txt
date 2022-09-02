@@ -1,0 +1,23 @@
+CÁC LỆNH GIT NHẤT ĐỊNH PHẢI NHỚ;
+
+1. Khởi tạo một project : git init
+
+2. Thiết lập user name và email: git config
+
+3. Kiểm tra status:  git status
+
+4. Thêm tệp vào git repo: git add .
+
+5. Lưu lại các thay đổi trong thư mục sẵn sàng đẩy lên github: git commit -m 'noi dung'
+
+6. Kiểm tra log trong git repo: git log --online
+
+7. Tạo một branch mới: git checkout -b tên_branch_mới
+
+8. Chuyển sang một branch khác: git checkout tên_branch_cần_đến
+
+9. Tạo đường dẫn kết nối với github và đẩy code lên github: git remote add origin url
+
+10. Đẩy code lên github: git push -u origin tên_branch
+
+11. Clone code trên github về máy: git clone url
