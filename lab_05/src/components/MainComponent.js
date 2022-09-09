@@ -6,6 +6,7 @@ import Footer from './Footer';
 import Home from './Home';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Contact from './Contact';
+import DishesDetail from './DishesDetail';
 import { COMMENTS } from '../shared/comments';
 import { PROMOTIONS } from '../shared/promotion';
 import { LEADERS } from '../shared/leaders';
@@ -28,6 +29,13 @@ class main extends Component {
               leader={this.state.leaders?.filter((leader) => leader.featured)[0]}
           />
         <Menu dishes={this.state.dishes} onClick={(dishId) => this.onDishSelect(dishId)} />
+        <DishesDetail
+          dish={
+            this.state.dishes.filter(
+              (dish) => dish.id === this.state.selectedDish
+            )[0]
+          }
+        />
         <Footer />
 
         <Switch>
